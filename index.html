@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Fitness</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            height: 1000px;
+            background: url('/Lec26_Project1_GymWebsite/builderPhoto.jpg');
+            background-size: 2200px 1550px;
+            background-repeat: no-repeat;
+            font-family: 'Baloo Bhai', cursive;
+        }
+
+        /* Header Starts Here*/
+        .left {
+            color: white;
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: -10px;
+            left: 20px;
+        }
+
+        .left img {
+            width: 110px;
+            height: 100px;
+            margin: 1px 0px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            line-height: 0px;
+            font-size: 20px;
+            margin: -25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .left div a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .mid {
+            color: white;
+            /* border: 2px solid green; */
+            display: block;
+            width: 680px;
+            margin: 30px auto;
+        }
+
+        .navbar li {
+            display: inline-block;
+            padding: 0px 10px;
+            margin: 0px 8px;
+            font-size: 21px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .right {
+            color: white;
+            /* border: 2px solid yellow; */
+            display: inline-block;
+            position: absolute;
+            top: 21px;
+            right: 5px;
+            width: 21%;
+        }
+
+        .btn {
+            padding: 7px 10px;
+            margin: 0px 9px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai', cursive;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: grey;
+            border: 3px solid black;
+        }
+        /* Header Ends Here */
+
+        .container {
+            color: white;
+            border: 2px solid grey;
+            width: 500px;
+            margin: 70px 78px;
+            padding: 5px 5px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container .form-group {
+            margin: 2px 2px;
+            padding: 6px 20px;
+            font-size: 23px;
+        }
+
+        .container .form-group input {
+            display: inline-block; /**/
+            text-align: center;
+            font-size: 20px;
+            padding: 8px 74px;
+        }
+
+        .container #radioGender {
+            margin: 5px -30px;
+            margin-bottom: -5px;
+            position: relative;
+            width: 100%;
+        }
+
+        .container .form-group .radioGender {
+            margin: 2px 25px;
+        }
+
+        .container .form-group .radio {
+            margin: 2px 10px;
+        }
+
+        .container .form-group span {
+            font-size: 23px;
+            margin-right: 10px;
+        }
+
+        .container .form-group select {
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .container .form-group select option {
+            text-align: center;
+        }
+
+        .container .form-group .btn {
+            padding: 7px 61px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <!-- Left Part for Logo-->
+        <div class="left">
+            <a href="#"><img src="/Lec26_Project1_GymWebsite/logoDesign.png" alt=""></a>
+            <div><a href="#">Harry Fitness</a></div>
+        </div>
+        <!-- Left Part Ended -->
+
+        <!-- Mid Part for Navigation Bar-->
+        <div class="mid">
+            <!-- Navigation Bar -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Mid Part Ended -->
+
+        <!-- Right Part for Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+        <!-- Right Part Ended -->
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Form Part Here -->
+    <div class="container">
+        <h1>Join the best gym of Delhi now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age" required>
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Number" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email" required>
+            </div>
+            <div class="form-group" id="radioGender">
+                <span class="radioGender">Gender</span>
+                <input type="radio" name="myGender" class="radio" required><span>Male</span>
+                <input type="radio" name="myGender" class="radio" required><span>Female</span>
+            </div>
+            <div class="form-group">
+                <span class="state">State</span>
+                <select required>
+                    <option value="Select Option">Select Option</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="submit" name="" placeholder="Submit" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
